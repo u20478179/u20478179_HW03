@@ -1,0 +1,253 @@
+HTML CODE
+
+//html structure CODE
+{
+    <!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <html lang="en">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title></title>
+    
+</head>
+
+<body>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
+}
+
+//box MODEL
+▪ Content - The content of the box, where text and images appear.
+▪ Padding - Clears an area around the content. The padding is transparent
+▪ Border - A border that goes around the padding and content
+▪ Margin - Clears an area outside the border. The margin is transparent. Default
+  is 0. It is important to note that margin is the external space separating boxes.
+
+//line break
+<p>This is a <br> paragraph with a line break.</p>
+
+//links 
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+
+//images
+first link the files then the image name
+<img src="./moviepictures/MegamindPoster.jpg" alt="oof"> 
+
+//image from website 
+src="https://www.websitename.com/images/imgName.jpg".
+(dont use external images unless nessacery)
+
+//image size
+<img src="./moviepictures/MegamindPoster.jpg" alt="oof" width="500" height"600"> 
+
+//extra text options
+<b> - Bold text
+<i> - Italic text
+<small> - Smaller text
+
+//How to comment out CODE
+<!-- Write your comments here -->
+shortcut is crtl/
+
+//tables
+
+
+
+//lists
+<ul> is for unoerdered lists
+<ol> is for ordered lists
+<dl> for description list
+<li> is used for the list elements inside the list
+
+//div 
+created block for specific section in html document
+
+//class
+good to use to link css and javascript to those classes
+to declare a class zone you would use
+<div class="zone">
+to reference the class in css you would do
+.zone {
+css code
+}
+for javascript to access a class
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("zone");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+}
+</script>
+
+//id element
+these are used as a unique identifier in a html document
+to declare a id you would use
+<h1 id="zone1">My Header</h1>
+to reference the id in css you would do
+#zone1 {
+css code
+}
+to use id tag you in javascript you would
+<script>
+function displayResult() {
+  document.getElementById("zone1").innerHTML = "Have a nice day!";
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS CODE
+
+// how to make border for div
+div{
+    margin: 0.8%;
+    border: 3px solid;
+    border-color: black;
+    border-radius: 1Px;
+}
+
+
+
+
+
+
+JS CODE
+
+//how to use alerts 
+    alert('i am working');
+
+
+
+
+
+
+JQUERY
+
+
+
+
+
+
+
+
+
+
+BOOTSTRAP CODE
+
+
+
+
+
+
+
+
+
+VERSION CONRTOL
+
+
+
+
+
+
+
+
+
+MODEL VIEW CONTROLLER
