@@ -1,0 +1,96 @@
+﻿
+@using FileModel.Models
+@model List<FileModel>
+
+
+
+<head>
+  <style type="text/css">
+.auto-style {
+color: #FFFFFF;
+}
+
+.t {
+text-align: center;
+vertical-align: middle;
+}
+</style>
+</head>
+
+<h2>Files</h2>
+
+    <div class="row">
+        <div class="col-md-4">
+            <p>File Contents</p>
+        </div>
+
+        <div class="col-md-4">
+            <p>Download Option</p>
+        </div>
+        <div class="col-md-4">
+            <p>Delete Option</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <p>This file contains nothing</p>
+        </div>
+
+        <div class="col-md-4">
+            <button>Download</button>
+        </div>
+        <div class="col-md-4">
+            <button>Delete</button>
+        </div>
+    </div>
+
+@{
+    ViewBag.Title = "File";
+}
+
+
+
+@*
+    Will generate as item but can be renamed.
+*@
+<div style="height: 400px; overflow: auto;">
+    <div class="well-sm">
+        <table class="table table-condensed table-hover">
+            <thead style="position: sticky;top: 0">
+                <tr bgcolor="#222222" class="auto-style">
+                    <th class="col-lg-8">File Name</th>
+                    <th class="t, col-lg-2">DOWNLOAD</th>
+                    <th class="t, col-lg-2">DELETE</th>
+                </tr>
+            </thead>
+
+            @*@foreach (FileModel File in Model)
+            {
+                <tr>
+
+                    <td>@File.FileName</td>
+                    <td>
+                        <button>
+                            @Html.ActionLink("Download", "DownloadFile",
+                             new { fileName = File.FileName })
+                        </button>
+                    </td>
+                    <td>
+                        <button>
+                            @Html.ActionLink("DELETE", "DeleteFile",
+                           new { fileName = File.FileName },
+                           new { onclick = "return confirm('Are you sure you wish to delete this?');" })
+                        </button>
+                    </td>
+
+                </tr>
+            }*@
+        </table>
+    </div>
+</div>
+
+
+
+
+

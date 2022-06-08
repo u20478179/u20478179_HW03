@@ -1,0 +1,31 @@
+﻿@using FileModel.Models;
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2 style="text-align:center">Not Nothing</h2>
+
+<div class="row">
+    <div class="col-md-8">
+        <h4>Description</h4>
+        <p>This is my description</p>
+    </div>
+    
+    <div class="col-md-4">
+        <h2>Option Selection</h2>
+        <input type="radio" value="DocumentRbutton"><label for="DocumentRbutton">Document</label><br />
+        <input type="radio" value="ImageRbutton"><label for="ImageRbutton">Image</label><br />
+        <input type="radio" value="VideoRbutton"><label for="VideoRbutton">Video</label><br />
+        <br />
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <div>
+                <input type="file" name="files" />
+                <br />
+                <input type="submit" value="Upload" />
+            </div>
+        }
+    </div>
+</div>
+
